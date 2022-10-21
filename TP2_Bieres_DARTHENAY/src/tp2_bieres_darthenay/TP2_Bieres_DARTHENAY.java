@@ -11,7 +11,9 @@ package tp2_bieres_darthenay;
 public class TP2_Bieres_DARTHENAY {
     public static void main(String[] args){
       
-        BouteilleBiere uneBiere = new BouteilleBiere();
+        BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",
+7.0 ,"Dubuisson") ;
+
 
         uneBiere.Nom = "Cuvee des trolls";
         uneBiere.degreAlcool = 7.0;
@@ -25,8 +27,13 @@ public class TP2_Bieres_DARTHENAY {
         uneBiere.brasserie = "Abbaye de Lefe";
         uneBiere.ouverture = false;
         
-        uneBiere.lireEtiquette();
-    }   
+        uneBiere.lireEtiquette();           
+    }
+    
+    BouteilleBiere autreBiere = new BouteilleBiere("Leffe", 6.6,"Abbaye de Leffe") ;
+    
+   
+    
     }
     
     
