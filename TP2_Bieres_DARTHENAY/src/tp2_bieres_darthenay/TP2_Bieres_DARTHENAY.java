@@ -11,39 +11,28 @@ package tp2_bieres_darthenay;
 public class TP2_Bieres_DARTHENAY {
     public static void main(String[] args){
       
-        BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",
-7.0 ,"Dubuisson") ;
-
-
-        uneBiere.Nom = "Cuvee des trolls";
-        uneBiere.degreAlcool = 7.0;
-        uneBiere.brasserie= "Dubuisson";
-        uneBiere.ouverture= false;
-   
+           
+        
+        BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",7.0 ,"Dubuisson") ;
         uneBiere.lireEtiquette();
+        uneBiere.Decapsuler();
+        System.out.println(uneBiere) ;
         
-        uneBiere.Nom = "Lefe";
-        uneBiere.degreAlcool = 6.6;
-        uneBiere.brasserie = "Abbaye de Lefe";
-        uneBiere.ouverture = false;
         
-        uneBiere.lireEtiquette();           
+        BouteilleBiere uneBiere2 = new BouteilleBiere("Lefe",6.6 ,"Abbaye de Lefe");
+        uneBiere2.lireEtiquette(); 
+        uneBiere2.Decapsuler();
+        System.out.println(uneBiere2) ;
+        
+        
+        BouteilleBiere uneBiere3 = new BouteilleBiere("Kro",10.2 ,"Le fournil");
+        uneBiere3.lireEtiquette();
+        uneBiere3.Decapsuler();
+        System.out.println(uneBiere3);
+        
+        BouteilleBiere uneBiere4 = new BouteilleBiere("azo",19.2 ,"Le cargot");
+        uneBiere4.lireEtiquette();
+        uneBiere4.Decapsuler();
+        System.out.println(uneBiere4); 
     }
-    
-    BouteilleBiere autreBiere = new BouteilleBiere("Leffe", 6.6,"Abbaye de Leffe") ;
-    
-   
-    
-    }
-    
-    
-    
-    
-    
-        // TODO code application logic here
-
-    
-   
-    
-    
-
+}
