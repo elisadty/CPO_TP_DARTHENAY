@@ -10,28 +10,37 @@ package tp2_bieres_darthenay;
  */
 public class BouteilleBiere {
         String Nom;
-        double degreAlcool;
+        Double degreAlcool;
         String brasserie;
-        boolean ouverture;
+        Boolean ouverture;
 
  public void lireEtiquette() {
     System.out.println("Bouteille de " + Nom +" (" + degreAlcool + " degres) \nBrasserie : " + brasserie ) ;
 }
  
-public BouteilleBiere(String unNom, double unDegre, String uneBrasserie) {
+public BouteilleBiere(String unNom, Double unDegre, String uneBrasserie) {
     Nom = unNom;
     degreAlcool = unDegre;
     brasserie = uneBrasserie;
     ouverture = false;
 }  
 
-public boolean Decapsuler() {
+
+public void Decapsuler() {
     if (ouverture==false){
         ouverture=true;
         System.out.println(ouverture);
     }else {
         System.out.println("erreur bière déjà ouverte");
     }
+}
+@Override
+public String toString() {
+    String chaine_a_retourner;
+    chaine_a_retourner = Nom + " (" + degreAlcool + " degres)" + ouverture + "?";
+    if (ouverture == true ) chaine_a_retourner += "oui" ;
+    else chaine_a_retourner += "non" ;
+    return chaine_a_retourner ;
 }
 }
 
