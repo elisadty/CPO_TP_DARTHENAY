@@ -11,41 +11,54 @@ package tp2_convertisseurobjet_darthenay;
 public class Convertisseur {
     int nbConversions ;
     
-    public Convertisseur () {
+    public Convertisseur () { //initialisation dans concepteur
         nbConversions=0 ;
     }
+    //creation des methode pour convertion
+    public double CelciusVersKelvin (double C) {
+    double K = C + 273.15 ; 
+    nbConversions +=1 ;
+    return K;
     
-    public void CelciusVersKelvin (double C) {
-              double K = C + 273.15 ;                  
 }
     
-    public void KelvinVersCelcius (double K){
-        double C = K - 273.15;     
+    public double KelvinVersCelcius (double K){
+        double C = K - 273.15;
+        nbConversions +=1 ;
+        return C;
     }
     
-    public void FarenheitversCelsius(double F){
+    public double FarenheitVersCelcius(double F){
          double C = (F - 32) * 5/9;
+         nbConversions +=1 ;
+         return C;
     } 
     
-    public void CelciusVersFarenheit (double C){
+    public double CelciusVersFarenheit (double C){
           double F = (C * 9/5) + 32;
+          nbConversions +=1 ;
+          return F;
     }
     
-    public void FarenheitVersKelvin (double F) {
-            double K = (F - 32) * 5/9 + 273.15;
+    public double FarenheitVersKelvin (double F) {
+        double K = (F - 32) * 5/9 + 273.15;
+        nbConversions +=1 ;
+        return K;
     }
     
-    public void KelvinVersFarenheit (double K ){
-       double F = (K - 273.15) * 9/5 + 32;
+    public double KelvinVersFarenheit (double K ){
+        double F = (K - 273.15) * 9/5 + 32;
+        nbConversions +=1 ;
+        return F;
     }
+    
+    @Override
+    public String toString() { 
+    return "nb de conversions : " + nbConversions;
+    
 }
     
-
+}
     
     
     
-    
-
-
-
-
