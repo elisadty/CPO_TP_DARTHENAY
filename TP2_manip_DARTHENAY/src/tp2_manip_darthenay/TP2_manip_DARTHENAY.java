@@ -17,11 +17,13 @@ public class TP2_manip_DARTHENAY {
     Tartiflette assiette1 = new Tartiflette(800) ;
     Tartiflette assiette2 = new Tartiflette(100) ;    
     Tartiflette assiette3 = assiette2 ; 
+    assiette2=assiette1;
+    assiette1=assiette3;
     
     System.out.println("nb de calories de Assiette 2 : " +
     assiette2.nbCalories) ;
-    System.out.println("nb de calories de Assiette 3 : " +
-    assiette3.nbCalories) ;
-    
+    System.out.println("nb de calories de Assiette 1 : " +
+    assiette1.nbCalories) ;
+    //Moussaka assiette666 = assiette1 ; est juste
 }
 }
