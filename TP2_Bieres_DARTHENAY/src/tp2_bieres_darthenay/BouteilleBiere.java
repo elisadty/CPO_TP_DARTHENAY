@@ -8,17 +8,17 @@ package tp2_bieres_darthenay;
  *
  * @author Elisa
  */
-public class BouteilleBiere {
+public class BouteilleBiere {  // crétion classe biere 
         String Nom;
         Double degreAlcool;
         String brasserie;
         Boolean ouverture;
 
- public void lireEtiquette() {
+ public void lireEtiquette() { // création d'une méthode pour lire les infos de la bouteille de bière
     System.out.println("Bouteille de " + Nom +" (" + degreAlcool + " degres) \nBrasserie : " + brasserie ) ;
 }
  
-public BouteilleBiere(String unNom, Double unDegre, String uneBrasserie) {
+public BouteilleBiere(String unNom, Double unDegre, String uneBrasserie) { //associe la classe à  la méthode
     Nom = unNom;
     degreAlcool = unDegre;
     brasserie = uneBrasserie;

@@ -13,10 +13,10 @@ public class TP2_Bieres_DARTHENAY {
       
            
         
-        BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",7.0 ,"Dubuisson") ;
-        uneBiere.lireEtiquette();
-        uneBiere.Decapsuler();
-        System.out.println(uneBiere) ;
+        BouteilleBiere uneBiere = new BouteilleBiere("Cuvée des trolls",7.0 ,"Dubuisson") ; //création d'une bouteille avec les infos necessaire 
+        uneBiere.lireEtiquette(); // lit étiquette de la bière
+        uneBiere.Decapsuler(); // savoir si bouteille est decapsulée ou non
+        System.out.println(uneBiere) ; //affiche toutes les infos bouteille
         
         
         BouteilleBiere uneBiere2 = new BouteilleBiere("Lefe",6.6 ,"Abbaye de Lefe");
