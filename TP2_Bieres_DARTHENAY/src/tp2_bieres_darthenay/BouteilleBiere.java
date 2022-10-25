@@ -26,7 +26,7 @@ public BouteilleBiere(String unNom, Double unDegre, String uneBrasserie) { //ass
 }  
 
 
-public void Decapsuler() {
+public void Decapsuler() { //méthode determine si bouteille est ouverte ou non
     if (ouverture==false){
         ouverture=true;
         System.out.println(ouverture);
@@ -35,7 +35,7 @@ public void Decapsuler() {
     }
 }
 @Override
-public String toString() {
+public String toString() { 
     String chaine_a_retourner;
     chaine_a_retourner = Nom + " (" + degreAlcool + " degres)" + ouverture + "?";
     if (ouverture == true ) chaine_a_retourner += "oui" ;
