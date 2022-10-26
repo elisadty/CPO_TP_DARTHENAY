@@ -28,5 +28,12 @@ public class TP2_manip_DARTHENAY {
      //Moussaka assiette666 = assiette1 ; Tarttiflette ne peut pas être convertie en moussaka
     //Moussaka assiette667 = new Tartiflette() ; le constructeur tartiflette en classe tartiflette ne peut pas donner de types
     // les deux sont fausses
+    //une référence objet qui annonce référencer un type d’objet peut-elle en référencer un autre qui n’a aucun rapport ? : NON
+    
+    Moussaka tabCal[]= new Moussaka[10]; // cretaion tableau tabCal pr moussaka avec 10 indices (de 0à9)
+     for (int i=0; i<10; i++){ 
+          tabCal[i]= new Moussaka(i)  ;
+        }
+    
 }
 }
