@@ -24,6 +24,9 @@ public class TP2_manip_DARTHENAY {
     assiette2.nbCalories) ;
     System.out.println("nb de calories de Assiette 1 : " +
     assiette1.nbCalories) ;
-    //Moussaka assiette666 = assiette1 ; est juste
+    
+     //Moussaka assiette666 = assiette1 ; Tarttiflette ne peut pas être convertie en moussaka
+    //Moussaka assiette667 = new Tartiflette() ; le constructeur tartiflette en classe tartiflette ne peut pas donner de types
+    // les deux sont fausses
 }
 }
