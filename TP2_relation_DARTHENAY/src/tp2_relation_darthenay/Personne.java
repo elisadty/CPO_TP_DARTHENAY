@@ -13,4 +13,14 @@ public class Personne {
   String Nom;
 String Prenom;
 
+public Personne( String unnom, String unprenom){
+    Nom=unnom;
+    Prenom=unprenom;
+}
+ @Override
+public String toString() { 
+    String chaine_a_retourner;
+    chaine_a_retourner = Nom + ": nom. " + " (" + Prenom + ": prenom.)";
+return chaine_a_retourner;
+
 }
