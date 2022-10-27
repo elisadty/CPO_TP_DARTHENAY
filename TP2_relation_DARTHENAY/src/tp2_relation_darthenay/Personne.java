@@ -20,7 +20,8 @@ public Personne( String unnom, String unprenom){
  @Override
 public String toString() { 
     String chaine_a_retourner;
-    chaine_a_retourner = Nom + ": nom. " + " (" + Prenom + ": prenom.)";
+    chaine_a_retourner = Nom + ": nom. " + " " + Prenom + ": prenom.";
 return chaine_a_retourner;
 
+}
 }

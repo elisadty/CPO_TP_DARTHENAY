@@ -24,7 +24,7 @@ public class Voiture {
  @Override
 public String toString() { 
     String chaine_a_retourner;
-    chaine_a_retourner = Modele + ": Modele" + " (" + Marque + ": marque)" + PuissanceCV + ": Puissance";
+    chaine_a_retourner = Modele + ": Modele" + "" + Marque + ": marque" + PuissanceCV + ": Puissance";
 return chaine_a_retourner;  
 }
 }
