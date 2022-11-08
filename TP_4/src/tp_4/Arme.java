@@ -8,15 +8,24 @@ package tp_4;
  *
  * @author Elisa
  */
-public class Arme {
+public class Arme{
   String Nom;
-  int Niveauattaque;
+  int Niveau_attaque;
   
- public class Baton{
-     
-     
- }
- public class Epee{
-     
- }
+public Arme (String unNom, int attaque){
+    Nom=unNom;
+    Niveau_attaque=attaque;
+    if (attaque>100 && attaque<0){
+        attaque=0;
+    }   
+}  
+   
+
+ 
+ @Override
+public String toString() { 
+    String chaine_a_retourner;
+    chaine_a_retourner = "Arme : " + Nom + ", Niveau d'attaque : " + Niveau_attaque ;
+    return chaine_a_retourner ;
+}
 }

@@ -15,6 +15,17 @@ public class TP_4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Epee exca = new Epee("Excalibur",7,5);
+        Epee durandal= new Epee("Durandal",4,7); 
+         System.out.println(exca);
+          System.out.println(durandal);
+          
+        baton chen = new baton ("Chene",4,5);
+        baton chrm = new baton ("Charme",5,6);
+         System.out.println(chen);
+          System.out.println(chrm);
+         
     }
-    
+      
 }
