@@ -3,12 +3,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package tp_4;
-import jav.until.ArryLister;
+
 
 /**
  *
  * @author Elisa
  */
+import Armes.Arme;
+import Armes.baton;
+import Armes.Epee;
+import Armes.magicien;
 import java.util.ArrayList;
 public class TP_4 {
 
@@ -34,11 +38,12 @@ public class TP_4 {
         tabdyn.add(chrm); 
         tabdyn.add(exca);
         tabdyn.add(durandal);
-        
         System.out.println(tabdyn);
         
-      
-         
+        magicien gandalf= new magicien("Gandalf",65,true); 
+        magicien garcimore= new magicien("garcimore",44,false);
+        System.out.println(gandalf); 
+        System.out.println(garcimore);
     }
       
 }
