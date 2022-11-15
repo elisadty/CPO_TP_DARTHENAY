@@ -1,4 +1,4 @@
-package tp_4;
+package Armes;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -10,6 +10,17 @@ package tp_4;
  * @author Elisa
  */
 public class personnage {
+    String nom; 
+    int vie;
+
+    public personnage(String nom, int vie) {
+        this.nom = nom;
+        this.vie = vie;
+    }
     
     
+    
+    
+    
+
 }

@@ -12,7 +12,9 @@ package tp_4;
 import Armes.Arme;
 import Armes.baton;
 import Armes.Epee;
+import Armes.guerrier;
 import Armes.magicien;
+import Armes.personnage;
 import java.util.ArrayList;
 public class TP_4 {
 
@@ -44,6 +46,20 @@ public class TP_4 {
         magicien garcimore= new magicien("garcimore",44,false);
         System.out.println(gandalf); 
         System.out.println(garcimore);
+        
+        guerrier conan = new guerrier ("conan", 78, false);
+        guerrier lannister = new guerrier ("lanister", 45, true);
+        System.out.println(conan);
+        System.out.println(lannister);
+        
+        ArrayList<personnage> tabpers=new ArrayList<personnage>();
+        tabpers.add(conan);
+        tabpers.add(lannister);
+        tabpers.add(gandalf);
+        tabpers.add(garcimore);
+        System.out.println(tabpers);
+        
+        
     }
       
 }

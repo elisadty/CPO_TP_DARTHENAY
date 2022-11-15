@@ -1,4 +1,4 @@
-package tp_4;
+package Armes;
 
 
 /*
@@ -10,6 +10,7 @@ package tp_4;
  *
  * @author Elisa
  */
+
 public class baton extends Arme {
      int age;
      
